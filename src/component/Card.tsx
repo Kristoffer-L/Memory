@@ -8,11 +8,9 @@ function FindCard(cardArr: string[]) {
     return(
         <ul className="cards-box">
     {cardArr.image.map((item) => {
-
-            return (  <li key={item.src} className="card-section">
-                    <img className="card-image" src={item.src} alt="logo" />
-                    {/* <img className="back-face" src="./images/cardCover.jpg" alt="card cover" /> */}
-
+            return (  <li key={item} className="card-section">
+                    <img className="card-image" src={item} alt="logo" />
+                    <img className="back-face" src="./images/cardCover.jpg" alt="card cover" />
 
                 </li>)
         })}

@@ -14,7 +14,8 @@ const cardArr = [
 function App() {
   const [cards, setCards] = useState([])
   const [turns, setTurns] = useState([])
-
+  const [flippedCards, setFlippedCards] = useState([])
+  const [matchedCards, setMatchedCards] = useState([]) 
 
   const shuffle = () => { 
     const shuffledCards = [...cardArr, ...cardArr]
@@ -27,8 +28,13 @@ function App() {
   
   console.log(cards, turns)
 
+  const handleChoice =(card) => {
+
+
+
   return (
     <>
+
 
     <h1>Magic Match</h1>
     <button onClick={shuffle}>Start</button>
