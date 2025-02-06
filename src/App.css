@@ -2,16 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #000035;
 }
-
+.cards-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 5rem;
+}
 .card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   border: solid;
   height: 20rem;
-  width: 15rem;
+  width: 24%;
+  background-color: #00008f;
+  border-radius: 1rem;
 }
 .card-image {
   display: flex;
   height: auto;
   width: 10rem;
-  margin: 50% auto;
+  margin: auto;
+  background-color: #00008f;
 }

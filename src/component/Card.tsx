@@ -5,11 +5,11 @@
 function FindCard(cardArr: string[]) {
     console.log("cardArr", cardArr.image)
     return(
-        <ul>
+        <ul className="cards-box">
     {cardArr.image.map((item) => {
-                <li key={item} className="card-section">
-                    <img src={item} alt="logo" />
-                </li>
+            return (  <li key={item} className="card-section">
+                    <img class="card-image" src={item} alt="logo" />
+                </li>)
         })}
         </ul>
     )

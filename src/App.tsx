@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import FindCard from './component/Card'
 
-const cardArr = ["./images/bird.jpg", "./images/cat.webp", "./images/fish.jpg", "./images/seahorse.jpg", "./images/seal.webp", "./images/spider.jpg", "./images/bird.jpg", "./images/cat.webp", "./images/fish.jpg", "./images/seahorse.jpg", "./images/seal.webp", "./images/spider.jpg"]
+const cardArr = ["./images/bat.png", "./images/cat.png", "./images/fish.png", "./images/seahorse.png", "./images/crab.png", "./images/snake.png", "./images/bat.png", "./images/cat.png", "./images/fish.png", "./images/seahorse.png", "./images/crab.png", "./images/snake.png"]
 
 const shuffle = (cardArr: string[]) => { 
     for (let i = cardArr.length - 1; i > 0; i--) { 
@@ -14,6 +14,7 @@ const shuffle = (cardArr: string[]) => {
     return cardArr; 
 }; 
 shuffle(cardArr)
+
 function App() {
   const [count, setCount] = useState(0)
 
