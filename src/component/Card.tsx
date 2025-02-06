@@ -10,7 +10,6 @@ function FindCard(cardArr: string[]) {
             return (  <li key={item} className="card-section">
                     <img class="card-image" src={item} alt="logo" />
                     <img className="back-face" src="./images/cardCover.jpg" alt="card cover" />
-
                 </li>)
         })}
         </ul>
