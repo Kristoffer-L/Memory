@@ -24,7 +24,7 @@
 .card-image {
   display: flex;
   height: auto;
-  width: 10rem;
+  width: 50%;
   margin: auto;
   background-color: #00008f;
 }
