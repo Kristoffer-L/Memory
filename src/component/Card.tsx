@@ -1,11 +1,18 @@
-const cardArr = ["./images/bird.jpg", "./images/cat.webp", "./images/fish.jpg", "./images/seahorse.jpg", "./images/seal.webp", "./images/spider.jpg", "./images/bird.jpg", "./images/cat.webp", "./images/fish.jpg", "./images/seahorse.jpg", "./images/seal.webp", "./images/spider.jpg"]
-let item = cardArr[Math.floor(Math.random() * cardArr.length)];
-function FindCard() {
+
+
+
+
+function FindCard(cardArr: string[]) {
     console.log("cardArr", cardArr)
     return(
-        <div className="card-section">
-            <img className="card-image" src={item} alt="Logo" />
-        </div>
+        <ul>
+    cardArr.map((item) => {
+        console.log("item", item)
+                <li className="card-section">
+                    <img src={item} alt="logo" />
+                </li>
+        })
+        </ul>
     )
 }
 
