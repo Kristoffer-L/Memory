@@ -4,27 +4,26 @@
   box-sizing: border-box;
   background-color: #000035;
 }
-.cards-box {
+.card {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 5rem;
 }
-.card-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border: solid;
+
+.start-btn {
+  background-color: rebeccapurple;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.front {
   height: 20rem;
-  width: 24%;
+  width: 15rem;
+  object-fit: contain;
   background-color: #00008f;
-  border-radius: 1rem;
 }
-.card-image {
-  display: flex;
-  height: auto;
-  width: 50%;
-  margin: auto;
+.back {
+  height: 20rem;
+  width: 15rem;
   background-color: #00008f;
 }
