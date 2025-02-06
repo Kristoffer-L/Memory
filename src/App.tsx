@@ -30,7 +30,8 @@ function App() {
   return (
     <>
       <button onClick={shuffle}>Start</button>
-      <FindCard image={cardArr} />
+      <FindCard className="front" image={cardArr} />
+      <img className="back" src="./images/cardCover.jpg" alt="card cover" />
     </>
   )
 }
