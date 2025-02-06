@@ -29,6 +29,7 @@ function App() {
 
   return (
     <>
+
     <h1>Magic Match</h1>
     <button onClick={shuffle}>Start</button>
 
@@ -44,6 +45,7 @@ function App() {
       )})
       }
     </div>
+
     </>
   )
 }
