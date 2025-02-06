@@ -3,15 +3,14 @@
 
 
 function FindCard(cardArr: string[]) {
-    console.log("cardArr", cardArr)
+    console.log("cardArr", cardArr.image)
     return(
         <ul>
-    cardArr.map((item) => {
-        console.log("item", item)
-                <li className="card-section">
+    {cardArr.image.map((item) => {
+                <li key={item} className="card-section">
                     <img src={item} alt="logo" />
                 </li>
-        })
+        })}
         </ul>
     )
 }
