@@ -14,7 +14,8 @@ const cardArr = [
 function App() {
   const [cards, setCards] = useState([])
   const [turns, setTurns] = useState([])
-
+  const [flippedCards, setFlippedCards] = useState([])
+  const [matchedCards, setMatchedCards] = useState([]) 
 
   const shuffle = () => { 
     const shuffledCards = [...cardArr, ...cardArr]
@@ -27,10 +28,14 @@ function App() {
   
   console.log(cards, turns)
 
+  const handleChoice =(card) => {
+
+
+
   return (
     <>
       <button onClick={shuffle}>Start</button>
-      <FindCard className="front-face" image={cardArr} />
+      <FindCard image={cardArr} />
     </>
   )
 }
