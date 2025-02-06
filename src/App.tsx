@@ -34,8 +34,24 @@ function App() {
 
   return (
     <>
-      <button onClick={shuffle}>Start</button>
-      <FindCard image={cardArr} />
+
+
+    <h1>Magic Match</h1>
+    <button onClick={shuffle}>Start</button>
+
+    <div className="card-grid">
+      {cards.map((card) => {
+        return(
+          <div className="card" key={card.id}>
+              <div>
+                <img className="front" src={card.src} alt="card cover" />
+                <img className="back" src="./images/cardCover.jpg" alt="card cover" />
+              </div>
+          </div>
+      )})
+      }
+    </div>
+
     </>
   )
 }
